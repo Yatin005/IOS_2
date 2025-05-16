@@ -14,6 +14,7 @@
 		D87BFEFF2DD7C8B700A2C327 /* Week2_Views_LayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BFEFE2DD7C8B700A2C327 /* Week2_Views_LayoutTests.swift */; };
 		D87BFF092DD7C8B700A2C327 /* Week2_Views_LayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BFF082DD7C8B700A2C327 /* Week2_Views_LayoutUITests.swift */; };
 		D87BFF0B2DD7C8B700A2C327 /* Week2_Views_LayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BFF0A2DD7C8B700A2C327 /* Week2_Views_LayoutUITestsLaunchTests.swift */; };
+		D87BFF182DD7D4FF00A2C327 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BFF172DD7D4FF00A2C327 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D87BFF042DD7C8B700A2C327 /* Week2_Views_LayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week2_Views_LayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87BFF082DD7C8B700A2C327 /* Week2_Views_LayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2_Views_LayoutUITests.swift; sourceTree = "<group>"; };
 		D87BFF0A2DD7C8B700A2C327 /* Week2_Views_LayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2_Views_LayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D87BFF172DD7D4FF00A2C327 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D87BFEEF2DD7C8B600A2C327 /* ContentView.swift */,
 				D87BFEF12DD7C8B700A2C327 /* Assets.xcassets */,
 				D87BFEF32DD7C8B700A2C327 /* Preview Content */,
+				D87BFF172DD7D4FF00A2C327 /* Contact.swift */,
 			);
 			path = Week2_Views_Layout;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87BFF182DD7D4FF00A2C327 /* Contact.swift in Sources */,
 				D87BFEF02DD7C8B600A2C327 /* ContentView.swift in Sources */,
 				D87BFEEE2DD7C8B600A2C327 /* Week2_Views_LayoutApp.swift in Sources */,
 			);
