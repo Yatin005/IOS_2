@@ -17,6 +17,8 @@
 		D89919302DE112070003F8E1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899192E2DE112060003F8E1 /* Car.swift */; };
 		D89919312DE112070003F8E1 /* FileStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899192F2DE112070003F8E1 /* FileStructure.swift */; };
 		D89919352DE113400003F8E1 /* List_Exapmle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89919342DE113400003F8E1 /* List_Exapmle.swift */; };
+		D89919372DE1209A0003F8E1 /* List_Example_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89919362DE1209A0003F8E1 /* List_Example_2.swift */; };
+		D89919392DE122520003F8E1 /* CarlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89919382DE122520003F8E1 /* CarlistItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		D899192E2DE112060003F8E1 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../../../Car.swift; sourceTree = "<group>"; };
 		D899192F2DE112070003F8E1 /* FileStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileStructure.swift; path = ../../../FileStructure.swift; sourceTree = "<group>"; };
 		D89919342DE113400003F8E1 /* List_Exapmle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_Exapmle.swift; sourceTree = "<group>"; };
+		D89919362DE1209A0003F8E1 /* List_Example_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_Example_2.swift; sourceTree = "<group>"; };
+		D89919382DE122520003F8E1 /* CarlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarlistItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				D89919082DE10EEA0003F8E1 /* Assets.xcassets */,
 				D899190A2DE10EEA0003F8E1 /* Preview Content */,
 				D89919342DE113400003F8E1 /* List_Exapmle.swift */,
+				D89919362DE1209A0003F8E1 /* List_Example_2.swift */,
+				D89919382DE122520003F8E1 /* CarlistItem.swift */,
 			);
 			path = week_3;
 			sourceTree = "<group>";
@@ -271,6 +277,8 @@
 				D89919052DE10EE80003F8E1 /* week_3App.swift in Sources */,
 				D89919302DE112070003F8E1 /* Car.swift in Sources */,
 				D89919312DE112070003F8E1 /* FileStructure.swift in Sources */,
+				D89919372DE1209A0003F8E1 /* List_Example_2.swift in Sources */,
+				D89919392DE122520003F8E1 /* CarlistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

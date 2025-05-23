@@ -40,12 +40,19 @@ struct List_Exapmle: View {
                 .onDelete(perform: { indexSet in
                     cars.remove(atOffsets: indexSet)
                 })
+                .listRowBackground(
+                    Capsule()
+                        .fill(Color.teal)
+                        .padding(3)
+                )
             } //List
             .searchable(text: $searchCarModel, prompt: "Seach Car Model")
+//            .listStyle(.sidebar)
+            
+            .navigationTitle("Yatin Parulkar")
+            .navigationBarTitleDisplayMode(.inline)
         } //navstack
         
-        .navigationTitle("Interactive List")
-        .navigationBarTitleDisplayMode(.inline)
         
     }
     
