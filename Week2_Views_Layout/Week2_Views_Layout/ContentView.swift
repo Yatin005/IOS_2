@@ -71,7 +71,7 @@ struct ContentView: View {
                 Section(header: Text("Preference")) {
                     Toggle("Registered Users ? ", isOn: $isRegistered)
                     
-                    } //Section for Toggle
+                } //Section for Toggle
                 Section(header: Text("Layout Example")) {
                     VStack {
                         Text("VStack Content")
@@ -79,9 +79,9 @@ struct ContentView: View {
                         Rectangle()
                             .fill(Color.blue)
                             .frame(height: 100)
-//                        Circle()
-//                            .fill(Color.gray)
-//                            .frame(height: 70)      // Hardcode for color
+                        //                        Circle()
+                        //                            .fill(Color.gray)
+                        //                            .frame(height: 70)      // Hardcode for color
                         Circle()
                             .fill(Color("Circle"))   // using Assets color
                             .frame(height: 70)
@@ -104,7 +104,7 @@ struct ContentView: View {
                     .background(Color.yellow.opacity(0.3))
                     
                     
-                    } //Section for Layout
+                } //Section for Layout
                 Section(header: Text("Contatc")) {
                     ScrollView(.horizontal){
                         LazyHStack {
@@ -123,7 +123,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    } //Section for ContactList
+                } //Section for ContactList
                 Section(header: Text("Grid Example")) {
                     Grid(){
                         GridRow{
@@ -146,7 +146,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                } // Form
+            } // Form
             
             .navigationTitle("Views and Layout")
             .navigationBarTitleDisplayMode(.inline)
