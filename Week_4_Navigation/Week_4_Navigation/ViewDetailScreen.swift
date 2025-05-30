@@ -10,7 +10,7 @@ import SwiftUI
 struct ViewDetailScreen: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("View- Detail")
+            Text("View- Detail Screen")
                 .font(.title)
                 .fontWeight(.bold)
             

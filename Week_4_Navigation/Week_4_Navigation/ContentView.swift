@@ -15,7 +15,7 @@ struct ContentView: View {
                 Text("Content View")
                     .font(.title)
                     .fontWeight(.bold)
-                    
+                
                 
                 //navlink to viewdetailScreen
                 NavigationLink(destination: ViewDetailScreen()) {
@@ -46,14 +46,33 @@ struct ContentView: View {
                     ValueScreen(fruit: Fruit(name: "Pineapple"))
                 }
                 
+                //                //value-based navigation
+                //Error - No valid Navigation destination
+                //                NavigationLink(value: Fruit(name: "Lytchi")){
+                //                    Text("Show Lytchi")
+                //                        .font(.title2)
+                //                        .fontWeight(.bold)
+                //                        .foregroundStyle(.teal)
+                //                        .padding(.top, 25)
+                //                }
+                List {
+                    NavigationLink("Lytchi",value: Fruit(name: "Litchi") )
+                    NavigationLink("Grapes",value: Fruit(name: "Grapes") )
+                    NavigationLink("Orange",value: Fruit(name: "Orange") )
+                }
+                
                 
                 Spacer()
             } //Vstack
             .frame(minWidth: 0,maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-
+            
             .navigationTitle(Text("Week - 4 - Navigation"))
             .navigationBarTitleDisplayMode(.inline)
-        } // navigationStack
+            
+            .navigationDestination(for: Fruit.self){ fruit in
+                ValueScreen(fruit: fruit)
+            }
+        } // NavigationStack
     } // body
 } // contentView
 

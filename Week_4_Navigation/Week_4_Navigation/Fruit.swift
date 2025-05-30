@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct Fruit {
+struct Fruit : Hashable , Identifiable{
+    let id = UUID()
     let name : String
     
 }
