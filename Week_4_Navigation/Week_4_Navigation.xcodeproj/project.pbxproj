@@ -17,6 +17,8 @@
 		D83280942DEA3FCA0069EAB9 /* ViewDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83280932DEA3FCA0069EAB9 /* ViewDetailScreen.swift */; };
 		D83280962DEA42200069EAB9 /* ValueScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83280952DEA42200069EAB9 /* ValueScreen.swift */; };
 		D83280982DEA42E30069EAB9 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83280972DEA42E30069EAB9 /* Fruit.swift */; };
+		D832809A2DEA4C350069EAB9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83280992DEA4C350069EAB9 /* HomeScreen.swift */; };
+		D832809C2DEA52640069EAB9 /* TabViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D832809B2DEA52640069EAB9 /* TabViewScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		D83280932DEA3FCA0069EAB9 /* ViewDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailScreen.swift; sourceTree = "<group>"; };
 		D83280952DEA42200069EAB9 /* ValueScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueScreen.swift; sourceTree = "<group>"; };
 		D83280972DEA42E30069EAB9 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		D83280992DEA4C350069EAB9 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		D832809B2DEA52640069EAB9 /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				D83280932DEA3FCA0069EAB9 /* ViewDetailScreen.swift */,
 				D83280952DEA42200069EAB9 /* ValueScreen.swift */,
 				D83280972DEA42E30069EAB9 /* Fruit.swift */,
+				D83280992DEA4C350069EAB9 /* HomeScreen.swift */,
+				D832809B2DEA52640069EAB9 /* TabViewScreen.swift */,
 			);
 			path = Week_4_Navigation;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			files = (
 				D83280982DEA42E30069EAB9 /* Fruit.swift in Sources */,
 				D832806C2DEA3FA50069EAB9 /* ContentView.swift in Sources */,
+				D832809C2DEA52640069EAB9 /* TabViewScreen.swift in Sources */,
+				D832809A2DEA4C350069EAB9 /* HomeScreen.swift in Sources */,
 				D83280962DEA42200069EAB9 /* ValueScreen.swift in Sources */,
 				D832806A2DEA3FA50069EAB9 /* Week_4_NavigationApp.swift in Sources */,
 				D83280942DEA3FCA0069EAB9 /* ViewDetailScreen.swift in Sources */,

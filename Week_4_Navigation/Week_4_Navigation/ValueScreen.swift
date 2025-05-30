@@ -29,6 +29,17 @@ struct ValueScreen: View {
 
         .navigationTitle(Text("Value - Destination"))
         .navigationBarTitleDisplayMode(.inline)
+        
+        .onAppear(){
+            // event trigger when the view apperas on screen or comes in foreground
+            //perform necessary opt such as a load data
+            print(#function, "Value Screen appeared")
+        }
+        .onDisappear(){
+            // event trigger when the view is discarded or removed fron the foreground
+            // perform opt like saving/sync data, stop refreshing data
+            print(#function, "Value Screen disappeared")
+        }
     }
 }
 

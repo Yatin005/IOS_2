@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // var to trigger navigation to homescreen when set to true
+    @State private var showHomeScreen : Bool = false
     var body: some View {
         NavigationStack {
             VStack {
@@ -29,7 +32,7 @@ struct ContentView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundStyle(.brown)
-                        .padding(.top, 25)
+                        .padding(.top, 5)
                 }
                 NavigationLink {
                     ValueScreen(fruit: Fruit(name: "Apple"))
@@ -61,6 +64,23 @@ struct ContentView: View {
                     NavigationLink("Orange",value: Fruit(name: "Orange") )
                 }
                 
+                //programmatically navLink
+                
+                Button {
+                    // perform neessary opt to check if navlink shouble allowed or not
+                    let x = 11
+                    if (x > 10) {
+                       // perfor naav
+                        self.showHomeScreen = true
+                    }
+                } label: {
+                    Text("Check Condition")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.indigo)
+                        .padding(.horizontal, 25)
+                }
+                
                 
                 Spacer()
             } //Vstack
@@ -71,8 +91,31 @@ struct ContentView: View {
             
             .navigationDestination(for: Fruit.self){ fruit in
                 ValueScreen(fruit: fruit)
+            } //navDestination
+            .navigationDestination(isPresented: $showHomeScreen) {
+                HomeScreen()
+            }
+            .onAppear(){
+                // event trigger when the view apperas on screen or comes in foreground
+                //perform necessary opt such as a load data
+                print(#function, "ContentView - Vstack appeared")
+            }
+            .onDisappear(){
+                // event trigger when the view is discarded or removed fron the foreground
+                // perform opt like saving/sync data, stop refreshing data
+                print(#function, "ContentView - Vstack disappeared")
             }
         } // NavigationStack
+        .onAppear(){
+            // event trigger when the view apperas on screen or comes in foreground
+            //perform necessary opt such as a load data
+            print(#function, "ContentView - NavStack appeared")
+        }
+        .onDisappear(){
+            // event trigger when the view is discarded or removed fron the foreground
+            // perform opt like saving/sync data, stop refreshing data
+            print(#function, "ContentView - NavStack disappeared")
+        }
     } // body
 } // contentView
 
