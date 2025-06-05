@@ -1,6 +1,6 @@
 //
 //  PriceCalculationScreen.swift
-//  Lab_4-Navigation
+//  Lab_4-Yatin
 //
 //  Created by Yatin Parulkar on 2025-06-05.
 //
