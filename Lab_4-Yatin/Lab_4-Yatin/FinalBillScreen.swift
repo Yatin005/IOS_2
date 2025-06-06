@@ -25,7 +25,7 @@ struct FinalBillScreen: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Final Bill")
+        .navigationTitle("Final Bill :")
     }
 }
 

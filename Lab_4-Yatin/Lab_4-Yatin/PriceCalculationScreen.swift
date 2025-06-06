@@ -36,7 +36,7 @@ struct PriceCalculationScreen: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Price Calculation")
+        .navigationTitle("Price Calculation Screen")
     }
 }
 
