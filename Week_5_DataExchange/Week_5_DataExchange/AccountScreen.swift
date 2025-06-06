@@ -9,11 +9,14 @@ import SwiftUI
 
 struct AccountScreen: View {
     @EnvironmentObject var user : User
+    
     var body: some View {
         VStack{
-            Text("Account Information").font(.title)
+            Text("Account Information")
+                .font(.title)
             
-            Text("Email")
+            Text("Email : \(user.email)")
+            
             Spacer()
         }
         .navigationTitle("Account")
@@ -23,4 +26,5 @@ struct AccountScreen: View {
 
 #Preview {
     AccountScreen()
+        .environmentObject(User(email: "sample@apple.com", password: "sample123"))
 }

@@ -9,8 +9,8 @@
 import UIKit
 
 class User : ObservableObject{
-    var email : String
-    var password : String
+   @Published var email : String
+   @Published var password : String
     
     init(email: String, password: String){
         self.email = email

@@ -38,7 +38,7 @@ struct ContentView: View {
             SignInScreen(authFlow: $authflow)
                 .environmentObject(user) // injecting the observableObject to SignInScreen
         case .signUp:
-            SignupScreen(authFlow: $authflow)
+            SignUpScreen(authFlow: $authflow)
                 .environmentObject(user)
         case .home:
             HomeScreen(authFlow: $authflow)

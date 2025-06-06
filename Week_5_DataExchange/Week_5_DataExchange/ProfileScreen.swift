@@ -8,34 +8,51 @@
 import SwiftUI
 
 struct ProfileScreen: View {
+    @State private var email : String = "admin@example.com"
+    @State private var password : String = "admin123"
     
-    @State private var email :String = "admin@example.com"
-    @State private var password :String = "123456"
     @EnvironmentObject var user : User
     
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        VStack {
-            NavigationStack {
-                Form {
-                    TextField("Email", text: $email)
-                    SecureField("Password", text: $password)
-                    Button ("Update"){
-                    //verify credentials
-                        if(!email.isEmpty && !password.isEmpty){
-                            //go to homeScreen
-                        }
-                    }.buttonStyle(.borderedProminent)
-                    
-                    
-                    
-                } //Form
-            }
+        VStack{
+            Form{
+                TextField("Enter email", text: $email)
+                    .textFieldStyle(.roundedBorder)
+                
+                SecureField("Enter password", text: $password)
+                    .textFieldStyle(.roundedBorder)
+                
+                
+                Button("Update"){
+                    //verify the credential
+                    if (!email.isEmpty && !password.isEmpty){
+                        //update details
+                        
+                        user.email = email
+                        user.password = password
+                        
+                        //show alert that the details have been updated
+                        
+                        dismiss()
+                    }
+                }.buttonStyle(.borderedProminent)
+                
+                
+            }//Form
         }
         .navigationTitle("Profile")
-        .padding()
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear(){
+            //show existing data
+            email = user.email
+            password = user.password
+        }
     }
-    }
+}
 
 #Preview {
     ProfileScreen()
+        .environmentObject(User(email: "sample@apple.com", password: "sample123"))
 }

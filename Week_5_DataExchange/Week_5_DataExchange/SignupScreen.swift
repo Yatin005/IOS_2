@@ -7,35 +7,42 @@
 
 import SwiftUI
 
-struct SignupScreen: View {
-    @State private var email :String = "admin@example.com"
-    @State private var password :String = "123456"
+struct SignUpScreen: View {
+    @State private var email : String = "admin@example.com"
+    @State private var password : String = "admin123"
     
     @Binding var authFlow: AuthFlow
+    
     @EnvironmentObject var user : User
     
     var body: some View {
-        VStack {
-            NavigationStack {
-                Form {
-                    TextField("Email", text: $email)
-                    SecureField("Password", text: $password)
+            Form{
+                TextField("Enter email", text: $email)
+                    .textFieldStyle(.roundedBorder)
+                
+                SecureField("Enter password", text: $password)
+                    .textFieldStyle(.roundedBorder)
+                
+                Button("Create Account"){
+                    //create account
+                    //update shared user object
+                    user.email = email
+                    user.password = password
                     
-                    Button("Create Account"){
-                        
-                        user.email = email
-                        user.password = password
-                        
-                        authFlow = .home
-                    }.buttonStyle(.borderedProminent)
-                } //Form
+                    //go to home screen
+                    authFlow = .home
+                }
+                
+            }//Form
+            .onAppear(){
+                //show existing data
+                email = user.email
+                password = user.password
             }
-        }
-        .padding()
     }
 }
 
-
 #Preview {
-    SignupScreen(authFlow: .constant(.signUp))
+    SignUpScreen(authFlow: .constant(.signUp))
+        .environmentObject(User(email: "sample@apple.com", password: "sample123"))
 }
