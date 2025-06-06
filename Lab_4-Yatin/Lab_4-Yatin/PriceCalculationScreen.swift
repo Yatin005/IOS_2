@@ -27,9 +27,9 @@ struct PriceCalculationScreen: View {
                     Text("Calculate Final Bill")
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                        .background(Color.teal)
+                        .foregroundColor(.black)
+                        
                 }
             )
             

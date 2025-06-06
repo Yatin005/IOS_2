@@ -9,15 +9,15 @@ import SwiftUI
 
 struct FinalBillScreen: View {
     var price: Double
-       let taxRate = 0.13
+       let tax = 0.13
 
        var finalAmount: Double {
-           price + (price * taxRate)
+           price + (price * tax)
        }
     var body: some View {
         VStack() {
             Text("Base Price: $\(price, specifier: "%.2f")")
-            Text("Tax (13%): $\(price * taxRate, specifier: "%.2f")")
+            Text("Tax (13%): $\(price * tax, specifier: "%.2f")")
             Text("Final Amount: $\(finalAmount, specifier: "%.2f")")
                 .font(.headline)
                 .padding()
