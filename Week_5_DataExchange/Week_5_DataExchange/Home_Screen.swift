@@ -12,11 +12,15 @@ import SwiftUI
 struct Home_Screen: View {
     
     @Binding var authFlow: AuthFlow
+    @State private var showProfile: Bool = false
+    @State private var showAccount: Bool = false
+    
+    @EnvironmentObject var user : User
     var body: some View {
         
         NavigationStack{
             VStack{
-                Text("Welcome, ")
+                Text("Welcome, \(user.email)")
                 Spacer()
                 
             }//VStack
@@ -28,11 +32,11 @@ struct Home_Screen: View {
                 ToolbarItem(placement: .topBarTrailing){
                     Menu{
                         Button("Profile"){
-                            
+                            showProfile = true
                         }
                         
                         Button("Account"){
-                            
+                            showAccount = true
                         }
                         
                         Button("Logout"){
@@ -48,7 +52,12 @@ struct Home_Screen: View {
                 }
                 
             }
-            
+            .navigationDestination(isPresented: $showProfile) {
+                ProfileScreen()
+            }
+            .navigationDestination(isPresented: $showAccount) {
+                AccountScreen()
+            }
         }//NavigationStack
         
     }
@@ -57,5 +66,6 @@ struct Home_Screen: View {
 
 
 #Preview {
-    Home_Screen(authFlow: .constant(.signIn))
+    Home_Screen(authFlow: .constant(.home))
+        .environmentObject(User(email: "sample@example.com", password: "123456" ))
 }

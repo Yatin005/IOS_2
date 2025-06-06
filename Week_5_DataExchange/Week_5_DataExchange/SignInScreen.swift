@@ -12,6 +12,8 @@ struct SignInScreen: View {
     @State private var password :String = "123456"
     
     @Binding var authFlow: AuthFlow
+    @EnvironmentObject var user : User
+    
     var body: some View {
     
     VStack {
@@ -33,6 +35,7 @@ struct SignInScreen: View {
             } //Form
         }
     }
+    .navigationTitle("SignIn Screen")
     .padding()
 }
 }

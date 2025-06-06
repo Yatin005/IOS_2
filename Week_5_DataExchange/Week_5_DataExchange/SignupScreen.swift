@@ -12,6 +12,8 @@ struct SignupScreen: View {
     @State private var password :String = "123456"
     
     @Binding var authFlow: AuthFlow
+    @EnvironmentObject var user : User
+    
     var body: some View {
         VStack {
             NavigationStack {
@@ -20,6 +22,10 @@ struct SignupScreen: View {
                     SecureField("Password", text: $password)
                     
                     Button("Create Account"){
+                        
+                        user.email = email
+                        user.password = password
+                        
                         authFlow = .home
                     }.buttonStyle(.borderedProminent)
                 } //Form

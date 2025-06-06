@@ -12,6 +12,8 @@ import SwiftUI
 struct HomeScreen: View {
     
     @Binding var authFlow: AuthFlow
+    @State private var showProfile: Bool = false
+    @State private var showAccount: Bool = false
     var body: some View {
         
         NavigationStack{
@@ -28,11 +30,11 @@ struct HomeScreen: View {
                 ToolbarItem(placement: .topBarTrailing){
                     Menu{
                         Button("Profile"){
-                            
+                            showProfile = true
                         }
                         
                         Button("Account"){
-                            
+                            showAccount = true
                         }
                         
                         Button("Logout"){
@@ -48,7 +50,12 @@ struct HomeScreen: View {
                 }
                 
             }
-            
+            .navigationDestination(isPresented: $showProfile) {
+                ProfileScreen()
+            }
+            .navigationDestination(isPresented: $showAccount) {
+                AccountScreen()
+            }
         }//NavigationStack
         
     }

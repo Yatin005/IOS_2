@@ -11,6 +11,7 @@ struct ProfileScreen: View {
     
     @State private var email :String = "admin@example.com"
     @State private var password :String = "123456"
+    @EnvironmentObject var user : User
     
     var body: some View {
         VStack {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountScreen: View {
+    @EnvironmentObject var user : User
     var body: some View {
         VStack{
             Text("Account Information").font(.title)
