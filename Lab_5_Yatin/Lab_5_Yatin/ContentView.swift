@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @State private var authflow: AuthFlow = .signIn
+    @StateObject var patient = Patient()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch authflow {
+        case .signIn:
+            LogInScreen(authFlow: $authflow)
+                .environmentObject(patient)
+        case .signUp:
+            RegisterScreen(authFlow: $authflow)
+                .environmentObject(patient)
+        case .home:
+            DashboardScreen(authFlow: $authflow)
+                .environmentObject(patient)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
