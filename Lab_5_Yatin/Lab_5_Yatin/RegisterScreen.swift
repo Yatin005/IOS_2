@@ -2,7 +2,7 @@
 //  RegisterScreen.swift
 //  Lab_5_Yatin
 //
-//  Created by Deep Kaleka on 2025-06-10.
+//  Created by Yatin Parulkar  on 2025-06-10.
 //
 
 import SwiftUI
@@ -36,6 +36,6 @@ struct RegisterScreen: View {
    }
 
 #Preview {
-    RegisterScreen(authFlow: .constant(.signIn))
-        .environmentObject(Patient(email: "yatin@gmail.com", password: "123456", allergies: "Penicillin", medicalHistory: "None"))
+    RegisterScreen(authFlow: .constant(.signUp))
+        .environmentObject(Patient(email: "yatin@gmail.com", name: "yatin", allergies: "Penicillin", medicalHistory: "None"))
 }

@@ -13,7 +13,7 @@ class Patient : ObservableObject{
     @Published var allergies: String = ""
     @Published var medicalHistory: String = ""
     
-    init(email: String, password: String, allergies: String, medicalHistory: String){
+    init(email: String, name: String, allergies: String, medicalHistory: String){
         self.email = email
         self.name = name
         self.allergies = allergies

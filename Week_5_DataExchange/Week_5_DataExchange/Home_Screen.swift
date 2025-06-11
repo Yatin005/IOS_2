@@ -54,7 +54,7 @@ struct Home_Screen: View {
 }
 
 #Preview {
-    HomeScreen(authFlow: .constant(.home))
+    Home_Screen(authFlow: .constant(.home))
         .environmentObject(User(email: "sample@apple.com", password: "sample123"))
 }
 

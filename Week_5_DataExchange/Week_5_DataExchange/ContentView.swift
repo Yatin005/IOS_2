@@ -41,7 +41,7 @@ struct ContentView: View {
             SignUpScreen(authFlow: $authflow)
                 .environmentObject(user)
         case .home:
-            HomeScreen(authFlow: $authflow)
+            Home_Screen(authFlow: $authflow)
                 .environmentObject(user)
         }
         

@@ -2,7 +2,7 @@
 //  LogInScreen.swift
 //  Lab_5_Yatin
 //
-//  Created by Deep Kaleka on 2025-06-10.
+//  Created by Yatin Parulkar  on 2025-06-10.
 //
 
 import SwiftUI
@@ -14,25 +14,31 @@ struct LogInScreen: View {
         @State private var name = ""
         @State private var email = ""
 
-        var body: some View {
-            VStack(spacing: 20) {
-                TextField("Email", text: $email)
-                    .textFieldStyle(.roundedBorder)
-                TextField("Name", text: $name)
-                    .textFieldStyle(.roundedBorder)
-
-                Button("Login") {
-                    patient.name = name
-                    patient.email = email
-                    authFlow = .home
-                }
-
-                Button("Register") {
-                    authFlow = .signUp
-                }
-            }
+    var body: some View {
+        Form(){
+        VStack() {
+            TextField("Email", text: $email)
+                .textFieldStyle(.roundedBorder)
+            TextField("Name", text: $name)
+                .textFieldStyle(.roundedBorder)
+            
+            Button("Login") {
+                patient.name = name
+                patient.email = email
+                authFlow = .home
+            }.buttonStyle(.borderedProminent)
+                .padding(10)
+            
+            Button("Register") {
+                authFlow = .signUp
+            }.padding(10)
+        }
+    }
             .padding()
             .navigationTitle("Yatin Parulkar")
         }
     }
+#Preview {
+    LogInScreen(authFlow: .constant(.signIn))
+}
 
