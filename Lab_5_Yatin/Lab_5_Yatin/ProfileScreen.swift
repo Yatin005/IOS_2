@@ -21,7 +21,7 @@ struct ProfileScreen: View {
                 TextField("Enter email", text: $email)
                     .textFieldStyle(.roundedBorder)
                 
-                SecureField("Enter Name", text: $name)
+                TextField("Enter Name", text: $name)
                     .textFieldStyle(.roundedBorder)
                 
                 
