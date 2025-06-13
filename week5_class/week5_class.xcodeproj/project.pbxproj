@@ -18,6 +18,8 @@
 		BD1D24772DF37C7600CA2380 /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D24762DF37C7600CA2380 /* AuthFlow.swift */; };
 		BD1D24792DF3820A00CA2380 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D24782DF3820A00CA2380 /* ProfileScreen.swift */; };
 		BD1D247B2DF3822900CA2380 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D247A2DF3822900CA2380 /* AccountScreen.swift */; };
+		D87FB6B62DFCC326007DB5B9 /* LibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87FB6B52DFCC326007DB5B9 /* LibraryPicker.swift */; };
+		D87FB6B82DFCCC71007DB5B9 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87FB6B72DFCCC71007DB5B9 /* CameraPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		BD1D24762DF37C7600CA2380 /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
 		BD1D24782DF3820A00CA2380 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		BD1D247A2DF3822900CA2380 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		D87FB6B42DFCB660007DB5B9 /* week5-class-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "week5-class-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D87FB6B52DFCC326007DB5B9 /* LibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPicker.swift; sourceTree = "<group>"; };
+		D87FB6B72DFCCC71007DB5B9 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 		BD1D245F2DF3785C00CA2380 /* week5_class */ = {
 			isa = PBXGroup;
 			children = (
+				D87FB6B42DFCB660007DB5B9 /* week5-class-Info.plist */,
 				BD1D247A2DF3822900CA2380 /* AccountScreen.swift */,
 				BD1D24782DF3820A00CA2380 /* ProfileScreen.swift */,
 				BD1D24762DF37C7600CA2380 /* AuthFlow.swift */,
@@ -76,6 +82,8 @@
 				BD1D24722DF37AB700CA2380 /* SignUpScreen.swift */,
 				BD1D246E2DF3791900CA2380 /* User.swift */,
 				BD1D24662DF3785E00CA2380 /* Preview Content */,
+				D87FB6B52DFCC326007DB5B9 /* LibraryPicker.swift */,
+				D87FB6B72DFCCC71007DB5B9 /* CameraPicker.swift */,
 			);
 			path = week5_class;
 			sourceTree = "<group>";
@@ -159,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1D24732DF37AB700CA2380 /* SignUpScreen.swift in Sources */,
+				D87FB6B62DFCC326007DB5B9 /* LibraryPicker.swift in Sources */,
 				BD1D24632DF3785C00CA2380 /* ContentView.swift in Sources */,
+				D87FB6B82DFCCC71007DB5B9 /* CameraPicker.swift in Sources */,
 				BD1D24712DF3796B00CA2380 /* SignInScreen.swift in Sources */,
 				BD1D247B2DF3822900CA2380 /* AccountScreen.swift in Sources */,
 				BD1D24752DF37BD500CA2380 /* Homepage.swift in Sources */,
@@ -302,11 +312,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"week5_class/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "week5-class-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Week_5 Access Camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "week_5 app wants to store photos in photo_library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "week5 app wants to access photo_library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,11 +345,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"week5_class/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "week5-class-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Week_5 Access Camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "week_5 app wants to store photos in photo_library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "week5 app wants to access photo_library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
