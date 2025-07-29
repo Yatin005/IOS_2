@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA73A222E3963C80008170D /* imageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73A212E3963C80008170D /* imageUploadView.swift */; };
+		5CA73A242E3963DC0008170D /* ImageViewUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73A232E3963DC0008170D /* ImageViewUpload.swift */; };
 		D8430BC72E3416EC00EA742B /* Week_9_LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8430BC62E3416EC00EA742B /* Week_9_LabApp.swift */; };
 		D8430BC92E3416EC00EA742B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8430BC82E3416EC00EA742B /* ContentView.swift */; };
 		D8430BCB2E3416ED00EA742B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8430BCA2E3416ED00EA742B /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CA73A212E3963C80008170D /* imageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploadView.swift; sourceTree = "<group>"; };
+		5CA73A232E3963DC0008170D /* ImageViewUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewUpload.swift; sourceTree = "<group>"; };
 		D8430BC32E3416EC00EA742B /* Week_9_Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_9_Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8430BC62E3416EC00EA742B /* Week_9_LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_9_LabApp.swift; sourceTree = "<group>"; };
 		D8430BC82E3416EC00EA742B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +59,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5CA73A202E39634C0008170D /* New Folder */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "New Folder"; sourceTree = "<group>"; };
+		5CA73A252E39640A0008170D /* control */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = control; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +116,14 @@
 		D8430BC52E3416EC00EA742B /* Week_9_Lab */ = {
 			isa = PBXGroup;
 			children = (
-				5CA73A202E39634C0008170D /* New Folder */,
+				5CA73A252E39640A0008170D /* control */,
 				D8430BC62E3416EC00EA742B /* Week_9_LabApp.swift */,
 				D8A035F82E341D57006B3FD5 /* GoogleService-Info.plist */,
 				D8430BC82E3416EC00EA742B /* ContentView.swift */,
 				D8430BCA2E3416ED00EA742B /* Assets.xcassets */,
 				D8430BCC2E3416ED00EA742B /* Preview Content */,
+				5CA73A212E3963C80008170D /* imageUploadView.swift */,
+				5CA73A232E3963DC0008170D /* ImageViewUpload.swift */,
 			);
 			path = Week_9_Lab;
 			sourceTree = "<group>";
@@ -163,7 +169,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5CA73A202E39634C0008170D /* New Folder */,
+				5CA73A252E39640A0008170D /* control */,
 			);
 			name = Week_9_Lab;
 			packageProductDependencies = (
@@ -292,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA73A222E3963C80008170D /* imageUploadView.swift in Sources */,
 				D8430BC92E3416EC00EA742B /* ContentView.swift in Sources */,
 				D8430BC72E3416EC00EA742B /* Week_9_LabApp.swift in Sources */,
+				5CA73A242E3963DC0008170D /* ImageViewUpload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
