@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,6 @@
 		D8A035F52E341D25006B3FD5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D8A035F42E341D25006B3FD5 /* FirebaseFirestore */; };
 		D8A035F72E341D25006B3FD5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D8A035F62E341D25006B3FD5 /* FirebaseStorage */; };
 		D8A035F92E341D57006B3FD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8A035F82E341D57006B3FD5 /* GoogleService-Info.plist */; };
-		D8A035FC2E341D81006B3FD5 /* FireAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A035FA2E341D81006B3FD5 /* FireAuthHelper.swift */; };
-		D8A035FE2E341D8A006B3FD5 /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A035FD2E341D8A006B3FD5 /* ImageUploadView.swift */; };
-		D8A036002E341D92006B3FD5 /* ImageViewUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A035FF2E341D92006B3FD5 /* ImageViewUpload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +52,11 @@
 		D8430BE12E3416EE00EA742B /* Week_9_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_9_LabUITests.swift; sourceTree = "<group>"; };
 		D8430BE32E3416EE00EA742B /* Week_9_LabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_9_LabUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8A035F82E341D57006B3FD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D8A035FA2E341D81006B3FD5 /* FireAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAuthHelper.swift; sourceTree = "<group>"; };
-		D8A035FD2E341D8A006B3FD5 /* ImageUploadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageUploadView.swift; path = "../../../week6_hetShah-main/week6_HetShah/ImageUploadView.swift"; sourceTree = "<group>"; };
-		D8A035FF2E341D92006B3FD5 /* ImageViewUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewUpload.swift; path = "../../../week6_hetShah-main/week6_HetShah/ImageViewUpload.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5CA73A202E39634C0008170D /* New Folder */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "New Folder"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D8430BC02E3416EC00EA742B /* Frameworks */ = {
@@ -114,11 +112,9 @@
 		D8430BC52E3416EC00EA742B /* Week_9_Lab */ = {
 			isa = PBXGroup;
 			children = (
+				5CA73A202E39634C0008170D /* New Folder */,
 				D8430BC62E3416EC00EA742B /* Week_9_LabApp.swift */,
-				D8A035FD2E341D8A006B3FD5 /* ImageUploadView.swift */,
-				D8A035FF2E341D92006B3FD5 /* ImageViewUpload.swift */,
 				D8A035F82E341D57006B3FD5 /* GoogleService-Info.plist */,
-				D8A035FB2E341D81006B3FD5 /* controller */,
 				D8430BC82E3416EC00EA742B /* ContentView.swift */,
 				D8430BCA2E3416ED00EA742B /* Assets.xcassets */,
 				D8430BCC2E3416ED00EA742B /* Preview Content */,
@@ -151,15 +147,6 @@
 			path = Week_9_LabUITests;
 			sourceTree = "<group>";
 		};
-		D8A035FB2E341D81006B3FD5 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				D8A035FA2E341D81006B3FD5 /* FireAuthHelper.swift */,
-			);
-			name = controller;
-			path = "../../../week6_hetShah-main/week6_HetShah/controller";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +161,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5CA73A202E39634C0008170D /* New Folder */,
 			);
 			name = Week_9_Lab;
 			packageProductDependencies = (
@@ -304,9 +294,6 @@
 			files = (
 				D8430BC92E3416EC00EA742B /* ContentView.swift in Sources */,
 				D8430BC72E3416EC00EA742B /* Week_9_LabApp.swift in Sources */,
-				D8A035FC2E341D81006B3FD5 /* FireAuthHelper.swift in Sources */,
-				D8A035FE2E341D8A006B3FD5 /* ImageUploadView.swift in Sources */,
-				D8A036002E341D92006B3FD5 /* ImageViewUpload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
