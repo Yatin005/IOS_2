@@ -2,7 +2,7 @@
 //  FirebaseManager.swift
 //  Lab_7
 //
-//  Created by Deep Kaleka on 2025-08-01.
+//  Created by yatin PArulkaron on 2025-08-01.
 //
 // FirebaseManager.swift
 import Foundation

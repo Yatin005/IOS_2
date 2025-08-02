@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Lab_7
 //
-//  Created by Deep Kaleka on 2025-07-29.
+//  Created byyatin PArulkaron on 2025-07-29.
 //
 // ContentView.swift
 import SwiftUI
@@ -79,7 +79,7 @@ struct ContentView: View {
                 .border(Color.gray)
                 .padding()
             
-            Button("Save Journal Entry") {
+            Button("Save ") {
                 let saveLat = mapRegion.center.latitude
                 let saveLng = mapRegion.center.longitude
                 

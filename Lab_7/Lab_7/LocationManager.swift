@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  Lab_7
 //
-//  Created by Deep Kaleka on 2025-08-01.
+//  Created by yatin PArulkaron 2025-08-01.
 //
 import Foundation
 import CoreLocation

@@ -2,7 +2,7 @@
 //  Lab_7App.swift
 //  Lab_7
 //
-//  Created by Deep Kaleka on 2025-07-29.
+//  Created by yatin PArulkaron on 2025-07-29.
 //
 
 import SwiftUI
